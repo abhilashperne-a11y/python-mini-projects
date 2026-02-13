@@ -20,15 +20,17 @@ while True:
     print("2. Subtraction")
     print("3. Multiplication")
     print("4. Division")
-    print("5. Exit")
+    print("5. Power (a^b)")
+    print("6. Exit")
+    choice = input("Enter choice (1-6): ")
 
-    choice = input("Enter choice (1-5): ")
-
-    if choice == "5":
+    if choice == "6":
         print("Goodbye 👋")
         break
+    elif choice == '5':
+    print("Result:", num1 ** num2)
 
-    if choice not in ["1", "2", "3", "4"]:
+    if choice not in ["1", "2", "3", "4","5"]:
         print("Invalid choice. Try again.")
         continue
 
@@ -43,3 +45,4 @@ while True:
         print("Result:", mul(num1, num2))
     elif choice == "4":
         print("Result:", div(num1, num2))
+
