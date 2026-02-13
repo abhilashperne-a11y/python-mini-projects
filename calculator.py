@@ -22,22 +22,18 @@ while True:
     print("4. Division")
     print("5. Exit")
 
-    choice = input("Enter your choice (1-5): ")
+    choice = input("Enter choice (1-5): ")
 
     if choice == "5":
-        print("Goodbye! 👋")
+        print("Goodbye 👋")
         break
 
     if choice not in ["1", "2", "3", "4"]:
         print("Invalid choice. Try again.")
         continue
 
-    try:
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-    except ValueError:
-        print("Please enter valid numbers.")
-        continue
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
 
     if choice == "1":
         print("Result:", add(num1, num2))
