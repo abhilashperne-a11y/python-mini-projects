@@ -27,9 +27,6 @@ while True:
     if choice == "6":
         print("Goodbye 👋")
         break
-    elif choice == '5':
-    print("Result:", num1 ** num2)
-
     if choice not in ["1", "2", "3", "4","5"]:
         print("Invalid choice. Try again.")
         continue
@@ -45,4 +42,6 @@ while True:
         print("Result:", mul(num1, num2))
     elif choice == "4":
         print("Result:", div(num1, num2))
-
+    elif choice == '5':
+    	print("Result:", num1 ** num2)
+    
